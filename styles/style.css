@@ -1,4 +1,31 @@
+body{
+    font-size: 22px;
+
+}
+
+button,select,input,textarea{
+    font:inherit;
+}
+
 p{
-    font-size:64px;
+    color:red;
+}
+
+p{
     color:purple;
+}
+
+h1, h2{
+    color: blue;
+}
+.highlight{
+    text-transform: uppercase;
+    background-color: gold;   
+}
+
+.gray{
+    color:gray;
+}
+#second{
+    color:brown;
 }

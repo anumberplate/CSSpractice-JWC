@@ -6,11 +6,23 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Konkhmer+Sleokchher&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* input, button{
-    font: inherit;
-} */
+a {
+    color:hsl(207, 44%, 49%);
+}
 
+
+
+a:visited{
+    color: purple;
+} 
+
+a:hover , a:focus {
+    /* color: hsl(189, 44%, 49%); */
+    opacity: 0.8;
+}
+a:active{
+    color:red;
+}
 p {
     line-height:1.5;
-    
 }

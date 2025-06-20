@@ -1,57 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Konkhmer+Sleokchher&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
-    margin: 0;
+    margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 body{
-    margin: 0.5rem;
+    font-size:2rem;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
 
-nav{
-    border: 2px solid #333;
-    border-radius: 2rem;
-    margin: 0 auto 1rem;
-    max-width: 600px;
-    font-size:3rem;
-    line-height: 7rem;
-} 
-
-h2 {
-    padding: 1rem;
-    background: gold;
-    border-radius: 2rem 2rem 0 0;
-}
-
-ul {
+ul{
     list-style-type: none;
+    padding: 0.5rem;
+    text-align:right;
+    background-color:#000;
+    margin:0;
 }
 
-li { 
-    border-top: 1px solid #333;
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
 }
 
-li a{
-    display:block;
-}
-
-li a, 
-li a:visited {
+li a {
+    color:white;
     text-decoration: none;
-    color:#333;
 }
 
-li a:hover,
-li a:focus{
-    background: #333;
-    color:whitesmoke;
-    cursor: pointer;
-}
-
-li:nth-child(5) a{
-    border-radius:0 0 2rem 2rem;
+li a:hover , 
+li a:focus {
+    text-decoration: underline;
 }

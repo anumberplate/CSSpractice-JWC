@@ -1,28 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Konkhmer+Sleokchher&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body{
-    padding:10%;
+    padding: 5% 10%;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Konkhmer+Sleokchher&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-a {
-    color:hsl(207, 44%, 49%);
+ol{
+    list-style-type:lower-alpha;
+    padding: 0;
 }
 
-
-
-a:visited{
-    color: purple;
-} 
-
-a:hover , a:focus {
-    /* color: hsl(189, 44%, 49%); */
-    opacity: 0.8;
+ul{
+    list-style-type: square;
+    text-align: center;
+    color:#00f;
+    list-style-position: inside;
+    line-height: 1.6;
+    /*list-style: square url("../images/checkmark.png") inside;
+    */
 }
-a:active{
+ ul li:nth-child(even){
     color:red;
+ }
+
+ul::marker{
+    color:red;
+    font-family: fantasy;
+    font-size:1em;
+    content: "Only $5 >> ";
 }
-p {
-    line-height:1.5;
-}
+

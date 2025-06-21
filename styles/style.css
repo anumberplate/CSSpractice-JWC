@@ -29,8 +29,7 @@ body{
 }
 
 
-header, 
-footer{
+:is(header, footer){
     position:sticky;
     background-color: #1e293b;
     color:whitesmoke;
@@ -50,12 +49,15 @@ nav {
 
 }
 
-nav a, nav a:visited{
+nav a:any-link{
     color:#000;
 }
 
-nav:hover, nav a:focus{
-    color:hsla(0,0,20%,0.6);
+nav a:active{
+    color:red;
+}
+nav :is(a:hover, a:focus){
+    color:hsla(0,0%,20%,0.6);
 }
 main{
     flex-grow: 1;
@@ -66,7 +68,7 @@ main{
     padding:1rem;
 }
 footer{
-    bottom:0;
+    bottom: 0;
 }
 
 .card{
@@ -82,6 +84,10 @@ footer{
 
 }
 
+.card:target{
+    border: 2px solid rebeccapurple;
+}
+
 .card figure{
     display:flex;
     flex-flow: column nowrap;
@@ -91,11 +97,44 @@ footer{
     border: 5px double #333;
     border-radius:50%;
 }
+.card img:not([alt]) {
+    border: 10px solid red;
+}
+.card:nth-child(even){
+    background-color:papayawhip;
+}
 .card figcaption{
     font-weight:bolder;
     font-size:2rem;
     margin:1rem;
     text-align:center;
+}
+.card figcaption::after{
+    content: "✨";
+    display: block;
+}
+.card figcaption::first-line{
+    font-size: 3rem;
+}
+.card figcaption::after{
+    font-size: 3rem; 
+}
+.card p {
+    position:relative;
+}
+.card p::before{
+    content: open-quote;
+    font-size: 3em;
+    position:absolute;
+    top:-0.25em;
+    left:-0.5em;
+}
+.card p::after{
+    content: close-quote;
+    font-size:3em;
+    position:absolute;
+    top:-0.25em;
+    right:-0.5em;
 }
 /*small*/
 @media screen and (min-width: 576px){

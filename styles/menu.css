@@ -11,6 +11,8 @@
     --HEADER-COLOR: whitesmoke;
 }
 
+/* || BLOCK */
+
 html {
     font-size: 1.5rem;
     font-family: 'Nunito', sans-serif;
@@ -26,6 +28,8 @@ header {
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
 }
+
+/* || ELEMENTS */
 
 .header-title-line{
     padding:0.25rem 0.5rem;
